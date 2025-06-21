@@ -55,7 +55,13 @@ export default function Section2() {
                         Herramientas que estoy <strong className="colored">aprendiendo</strong>
                     </h2>
                     <Tecnologias
-                        tecnologias={["Next", "Css", "Html", "JavaScript", "React"]}></Tecnologias>
+                        tecnologias={[
+                            "Next",
+                            "Express",
+                            "Html",
+                            "JavaScript",
+                            "React",
+                        ]}></Tecnologias>
                     <h2 className="subtitulo-habilidades">
                         <strong className="colored">Otras</strong> herramientas
                     </h2>

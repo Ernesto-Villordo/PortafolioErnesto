@@ -8,10 +8,7 @@ export default function Section4() {
                 <h2 class="subtitle-2 tamaño-subtitulo">
                     Mandame un <strong className="colored">mensaje!</strong>
                 </h2>
-                <form
-                    class="formulario"
-                    action="https://formsubmit.co/ernestovillordo22@outlook.com"
-                    method="POST">
+                <form class="formulario" action="https://formsubmit.co/27f3ae344ce7a2e20350ef">
                     <input
                         type="text"
                         name="nombre"
