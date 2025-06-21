@@ -1,0 +1,112 @@
+#section4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contactame-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid grey;
+    margin-top: 60px;
+    border-radius: 50px;
+}
+
+.icono-enviar {
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(236, 71, 148, 1) 0%, rgba(243, 61, 98, 1) 100%);
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 50px;
+    animation: pulso-enviar 2s infinite ease-in-out forwards;
+}
+
+@keyframes pulso-enviar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tamaño-subtitulo {
+    margin-top: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulario input,
+select,
+textarea,
+button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 90%;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    transform: scale(1.1);
+    border: 2px solid rgb(119, 179, 252);
+    margin: 10px;
+}
+
+.formulario textarea {
+    height: 40%;
+}
+
+.formulario button {
+    width: 20%;
+    background: linear-gradient(90deg, rgba(34, 192, 102, 1) 0%, rgba(36, 104, 226, 1) 100%);
+    border-radius: 40px;
+    font-size: 20px;
+
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+    animation: pulso-sombra 4s infinite ease-in-out;
+    border: none;
+}
+
+@keyframes pulso-sombra {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+}
+
+.formulario button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
